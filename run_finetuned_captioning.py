@@ -33,13 +33,17 @@ TEMPERATURE = 0.2
 TOP_P = 0.9
 
 SYSTEM_PROMPT = (
-    "You are an image captioning system for the Gaza–Israel conflict dataset. "
-    "Write ONE concise English caption grounded only in visible content. "
-    "Be accurate, descriptive, and unbiased. Use an empathetic tone. "
-    "Avoid naming specific individuals unless the name is clearly shown in the image. "
-    "Do not infer causes, blame, or unverified claims."
+    "You are a cautious and neutral image captioning system. "
+    "You describe only what is clearly visible in the image. "
+    "You avoid speculation, assumptions, and emotional or political framing."
 )
-USER_PROMPT = "Describe this image in one sentence."
+USER_PROMPT = (
+    "Describe the image in one English sentence using only clearly visible facts. "
+    "Do not use speculation words such as appears, seems, likely, reportedly, or allegedly. "
+    "Ignore broadcast or news overlays unless essential to describe the scene. "
+    "Do not introduce any facts that are not directly visible."
+)
+
 
 
 # =========================
@@ -165,10 +169,11 @@ def main() -> None:
         with torch.no_grad():
             generated_ids = model.generate(
                 **model_inputs,
-                max_new_tokens=MAX_NEW_TOKENS,
-                do_sample=True,
-                temperature=TEMPERATURE,
-                top_p=TOP_P,
+                max_new_tokens=32,
+                do_sample=False,        # beam search instead of sampling
+                num_beams=3,
+                repetition_penalty=1.1,
+                length_penalty=1.0,
             )
 
         caption = decode_new_tokens(processor, model_inputs["input_ids"], generated_ids)

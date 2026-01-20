@@ -2,37 +2,38 @@
   "input_csv": "outputs/finetuned_val_predictions.csv",
   "pred_col": "caption_pred_finetuned",
   "total_captions": 132,
-  "avg_length_words": 29.68,
-  "min_length_words": 15,
-  "max_length_words": 43,
+  "avg_length_words": 26.99,
+  "min_length_words": 19,
+  "max_length_words": 30,
   "ner_label_counts": {
-    "ORG": 8,
-    "CARDINAL": 30,
-    "LANGUAGE": 10,
-    "NORP": 18,
-    "PERSON": 6,
-    "PERCENT": 2,
-    "GPE": 7,
-    "WORK_OF_ART": 4,
+    "CARDINAL": 39,
+    "NORP": 14,
+    "LANGUAGE": 5,
+    "ORG": 3,
     "TIME": 3,
-    "DATE": 1
+    "PERSON": 6,
+    "PRODUCT": 1,
+    "ORDINAL": 1,
+    "FAC": 1,
+    "GPE": 2,
+    "WORK_OF_ART": 2
   },
   "hits": {
     "loaded_terms": {
-      "count": 2,
-      "rate": 0.015151515151515152
+      "count": 1,
+      "rate": 0.007575757575757576
     },
     "harmful_tone": {
       "count": 0,
       "rate": 0.0
     },
     "speculation": {
-      "count": 12,
-      "rate": 0.09090909090909091
+      "count": 5,
+      "rate": 0.03787878787878788
     },
     "overlay_mentions": {
-      "count": 51,
-      "rate": 0.38636363636363635
+      "count": 27,
+      "rate": 0.20454545454545456
     }
   },
   "examples": {
@@ -41,13 +42,7 @@
         [
           "evil"
         ],
-        "The picture shows a man with a party hat and tears on his face, surrounded by devils, while a devil in the background eats popcorn and holds a cake."
-      ],
-      [
-        [
-          "genocide"
-        ],
-        "The picture shows a red background with white text in Arabic, which says \"Emergency: The International Human Rights Organization Israeli: Israel is complicit in collective genocide against Palestinians in Gaza blockade.\""
+        "The image shows a man in a blue shirt and a party hat crying in front of a burning fire, surrounded by small, devil-like figures. A large,"
       ]
     ],
     "harmful_tone": [],
@@ -56,64 +51,64 @@
         [
           "appears to"
         ],
-        "A young woman with a black face mask and a Palestinian flag on her shirt appears to be restrained by another person's hand while a man behind her holds an American and Israeli flag."
+        "A man in a dark suit and blue tie, with a yellow pin on his lapel, is speaking and pointing with his right hand. He appears to be"
       ],
       [
         [
           "appears to"
         ],
-        "A woman wearing a headscarf holds a severely malnourished child on her lap, while another child stands nearby. The scene appears to be inside a tent with various personal items visible in the background."
+        "A young boy with dirt on his face holds a bowl containing a greenish liquid. He appears to be in an outdoor area with concrete structures and other people in"
       ],
       [
         [
           "appears to"
         ],
-        "A group of women and children, some wearing headscarves, are seen holding empty metal containers and a green bucket. One woman appears to be speaking, while others look on."
+        "A woman in a black headscarf embraces another woman in a blue headscarf, who appears to be crying with her mouth open. In the background,"
       ],
       [
         [
           "appears to"
         ],
-        "A man with a visibly injured face holds two documents with Arabic text, one of which appears to be a birth certificate. He wears a light-colored shirt with \"Christian Dior\" printed on it."
+        "A man wearing a yellow bandana and jeans is being restrained by two police officers, one of whom appears to be shouting. Other individuals are visible in the background"
       ],
       [
         [
           "appears to"
         ],
-        "A man in a dark suit and tie speaks with his mouth open and hand raised, while other people are seated behind him in what appears to be a formal setting."
+        "Three women, two of whom are wearing head coverings, are walking on a paved road. The woman in the middle appears to be in distress, with her"
       ]
     ],
     "overlay_mentions": [
       [
         [
-          "logo"
-        ],
-        "A man with a gray beard and short hair is seen speaking, with his right hand raised to show a thumbs-up gesture. Behind him, a green and white flag with a logo featuring a green star and a yellow crescent is partially visible"
-      ],
-      [
-        [
           "news"
         ],
-        "A blurred figure with visible skin lesions lies on a patterned blanket, with a \"FAKE NEWS\" stamp superimposed over their back."
+        "The image shows a person lying on an orange patterned blanket, with a large red stamp on their back that reads \"FAKE NEWS\" with an exclamation"
       ],
       [
         [
-          "logo"
+          "news",
+          "corner"
         ],
-        "A man with a beard and glasses, wearing a suit and tie, gestures with his hands while speaking at a podium. Behind him, a blue backdrop displays the UN logo and text in multiple languages."
+        "A woman wearing a dark purple hijab is looking directly at the camera with a slight smile. The background is blurred, and the News is visible in the corner"
       ],
       [
         [
           "ap"
         ],
-        "A man smiles at the camera while standing outdoors with a group of children around him. The children appear happy, waving their hands, and some are seated on a table covered with a white cloth."
+        "Several parachutes are seen descending from the sky over a cityscape of multi-story buildings, some of which appear damaged."
       ],
       [
         [
-          "ap",
-          "news"
+          "ap"
         ],
-        "A group of parachutes carrying multiple people descends from a dark sky over urban buildings, with a news graphic and text overlay in Arabic at the bottom."
+        "A military vehicle with a camouflage cover is parked on a rocky, barren landscape. In the background, hills with sparse vegetation and a few buildings are visible under a"
+      ],
+      [
+        [
+          "ap"
+        ],
+        "The image shows a large crowd of people wearing blue caps and gowns, gathered outdoors in an open area. In the background, a large, multi-story building"
       ]
     ]
   },
