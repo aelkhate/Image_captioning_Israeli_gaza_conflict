@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "gt_column": "caption_train",
+    "val_csv": "splits/val.csv",
+    "pred_csv": "outputs/baseline_val_predictions.csv",
+    "pred_column": "caption_pred_baseline",
+    "num_pairs": 132,
+    "lowercase": false,
+    "normalize_whitespace": true,
+    "strip_chat_transcript": true
+  },
+  "bleu": {
+    "score": 5.305021782471482,
+    "bp": 0.46025106446813696,
+    "counts": [
+      1425,
+      438,
+      180,
+      77
+    ],
+    "totals": [
+      2848,
+      2716,
+      2584,
+      2452
+    ],
+    "precisions": [
+      50.03511235955056,
+      16.126656848306332,
+      6.96594427244582,
+      3.1402936378466557
+    ],
+    "sys_len": 2848,
+    "ref_len": 5058
+  },
+  "rougeL": {
+    "f1": 0.2930624699440457,
+    "precision": 0.40743282968938926,
+    "recall": 0.2387463530448413
+  },
+  "bertscore": {
+    "precision": 0.43868130445480347,
+    "recall": 0.28553298115730286,
+    "f1": 0.3609176278114319,
+    "rescale_with_baseline": true
+  }
+}

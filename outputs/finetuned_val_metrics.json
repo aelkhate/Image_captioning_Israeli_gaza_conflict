@@ -1,0 +1,32 @@
+{
+  "split": "val",
+  "gt_column": "caption_train",
+  "pred_column": "caption_pred_finetuned",
+  "alignment": {
+    "method": "img_name",
+    "gt_key": "Img Name",
+    "pred_key": "Img Name",
+    "n_gt": 132,
+    "n_pred": 132,
+    "n_aligned": 132,
+    "dropped_gt": 0,
+    "dropped_pred": 0
+  },
+  "metrics": {
+    "BLEU": 13.109504594903987,
+    "ROUGE_L": 0.3701129443237661,
+    "BERTScore_F1": 0.9098765254020691
+  },
+  "stats": {
+    "gt": {
+      "avg_words": 33.99242424242424,
+      "min_words": 15.0,
+      "max_words": 64.0
+    },
+    "pred": {
+      "avg_words": 29.681818181818183,
+      "min_words": 15.0,
+      "max_words": 43.0
+    }
+  }
+}
